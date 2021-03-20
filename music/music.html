@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script defer src="https://pro.fontawesome.com/releases/v5.10.0/js/all.js"
+    integrity="sha384-G/ZR3ntz68JZrH4pfPJyRbjW+c0+ojii5f+GYiYwldYU69A+Ejat6yIfLSxljXxD"
+    crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="icon" href="l.png">
+  <title>Amazon  music</title>
+</head>
+<style>
+  *{
+    overflow-x:hidden
+  }
+  body {
+    background-color:black;
+  }
+
+  .b1 {
+    margin-top: 30px;
+  }
+
+  #play {
+    position: center;
+    opacity: 1;
+    align-content: center;
+  }
+  .col{
+    max-width: 30px;
+    margin-top: 20px;
+  }
+  .navbar{
+    background-color: black;
+    position: sticky;
+  }
+  .b1 p{
+    margin: 0%;
+  }
+  footer {
+    position:sticky;
+    height: fit-content;
+    bottom: 0px;
+    z-index: +1;
+    background-color: black;
+    overflow-x: hidden;
+}
+audio{
+    color: black;
+    width: 100%;
+    margin-top: 1%;
+
+}
+input[type='range']{
+    -webkit-appearance: none;
+    outline: none;
+    margin: 0%;
+    width: 100%;
+    height: 3px;
+    
+}
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: rgb(252, 245, 245);
+}
+#myAudio:hover{
+    cursor:pointer;
+}
+footer .col-6{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mid {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+
+<body>
+  <nav class="navbar p-3 sticky-top navbar-expand-lg navbar-dark ">
+    <div class="container-fluid ms-4">
+      <a class="navbar-brand" href="#"><img src="onlinelogomaker-022421-1224-2324.png" width="275" alt=""></a>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active fs-4 ms-4 fw-bolder " aria-current="page" href="#"><i class="fas fa-home-alt"></i> Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  fs-4 ms-4" href="#"><i class="fas fa-headphones"></i> My music</a>
+          </li>
+
+
+        </ul>
+        <form class="d-flex ">
+          <input class="   form-control me-2" type="search" placeholder="Search"
+            aria-label="Search">
+          <i class="far fa-user-circle fa-2x ms-3" style="color: azure;"></i>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <hr style="padding: 0%; margin: 0% ; color: gray;">
+
+  <div class="headbar ms-4">
+    <div class="row">
+      <div class="col-10 ">
+        <p class="text-light fa-2x fw-bolder">top playlist</p>
+      </div>
+      <div class="col ms-4" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <i class="fas fa-chevron-circle-left " style="color: white;"></i>
+      </div>
+      <div class="col" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <i class="fas fa-chevron-circle-right " style="color: white;"></i>
+      </div>
+      <div class="col-1 mt-2">
+        <div class="btn btn-dark rounded-pill ">see all</div>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <div class="box1 d-flex justify-content-evenly align-items-center  ">
+
+          <div class="b1  ">
+            
+             <a href="mostplayed.html"> <img class="" src="41lX4bL4+-L._UX358_FMwebp_QL85_.jpg.webp" width="166" alt=""></a>
+              
+              <p class="text-light mt-2">Most played songs</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+            
+          </div>
+          <div class="b1">
+            <img src="41mpR1GdDmL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Hot hit songs</p>
+            <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="41mpR1GdDmL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Hot hit songs</p>
+            <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="51HbxHB3E4L._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">love hits</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="51pmryycOtL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Tholi prema songs</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="51Q7QTVRMeL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Antariksham songs</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="51Tvo2StUfL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Retro music lounge</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="5152wLiNxuL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Most played songs</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="box1 d-flex justify-content-around align-items-center  ">
+
+          <div class="b1  ">
+            <div class="image">
+              <img class="" src="41lX4bL4+-L._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+              <i id="play" class="fas fa-play" style="color: white;"></i>
+            </div>
+          </div>
+          <div class="b1">
+            <img src="41mpR1GdDmL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+          <div class="b1">
+            <img src="51HbxHB3E4L._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+          <div class="b1">
+            <img src="51pmryycOtL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+          <div class="b1">
+            <img src="51Q7QTVRMeL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+          <div class="b1">
+            <img src="51Tvo2StUfL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+          <div class="b1">
+            <img src="5152wLiNxuL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+  <div class="headbar ms-4">
+    <div class="row">
+      <div class="col-10 ">
+        <p class="text-light fa-2x fw-bolder">top playlist</p>
+      </div>
+      <div class="col ms-4" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="prev">
+        <i class="fas fa-chevron-circle-left " style="color: white;"></i>
+      </div>
+      <div class="col" type="button" data-bs-target="#carouselExampleControls2" data-bs-slide="next">
+        <i class="fas fa-chevron-circle-right " style="color: white;"></i>
+      </div>
+      <div class="col-1 mt-2">
+        <div class="btn btn-dark rounded-pill ">see all</div>
+      </div>
+    </div>
+  </div>
+  <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+
+        <div class="box1 d-flex justify-content-evenly align-items-center  ">
+
+          <div class="b1  ">
+            
+             <a href="mostplayed.html"> <img class="" src="41lX4bL4+-L._UX358_FMwebp_QL85_.jpg.webp" width="166" alt=""></a>
+              
+              <p class="text-light mt-2">Most played songs</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+            
+          </div>
+          <div class="b1">
+            <img src="41mpR1GdDmL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Hot hit songs</p>
+            <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="41mpR1GdDmL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Hot hit songs</p>
+            <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="51HbxHB3E4L._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">love hits</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="51pmryycOtL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Tholi prema songs</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="51Q7QTVRMeL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Antariksham songs</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="51Tvo2StUfL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Retro music lounge</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+          <div class="b1">
+            <img src="5152wLiNxuL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+            <p class="text-light mt-2">Most played songs</p>
+              <p class="text-muted m-0">the weekend,tones..</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="box1 d-flex justify-content-around align-items-center  ">
+
+          <div class="b1  ">
+            <div class="image">
+              <img class="" src="41lX4bL4+-L._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+              <i id="play" class="fas fa-play" style="color: white;"></i>
+            </div>
+          </div>
+          <div class="b1">
+            <img src="41mpR1GdDmL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+          <div class="b1">
+            <img src="51HbxHB3E4L._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+          <div class="b1">
+            <img src="51pmryycOtL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+          <div class="b1">
+            <img src="51Q7QTVRMeL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+          <div class="b1">
+            <img src="51Tvo2StUfL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+          <div class="b1">
+            <img src="5152wLiNxuL._UX358_FMwebp_QL85_.jpg.webp" width="166" alt="">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+  </div>
+
+  
+
+
+  <!-- Optional JavaScript; choose one of the two! -->
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+    
+     
+</body>
+
+</html>

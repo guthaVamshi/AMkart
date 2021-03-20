@@ -1,0 +1,616 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my amKart</title>
+    <link rel="icon" href="487-4874977_we-seamlessly-become-the-voice-of-your-company.png">
+</head>
+
+<body>
+
+
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>header</title>
+
+
+
+    <style>
+        #he1 {
+            color: white;
+            padding: 4px;
+        }
+
+        #he1:hover {
+
+            border-radius: 5px;
+            border-color: aliceblue;
+            border: 1px solid;
+        }
+
+        .big {
+            background-color: rgb(203, 202, 204);
+        }
+
+        .gh-2 {
+            max-height: 420px;
+            max-width: 400px;
+        }
+    </style>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a href="#"> <img class="mx-4" src="onlinelogomaker-022421-1219-0063-2000-transparent.png" width="200" alt="" srcset=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contactus</a>
+                    </li>
+                   
+                    
+                </ul>
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+
+                </form>
+                <ul>
+                    <li class="nav-items">
+                        <button class=" btn btn-danger mx-2" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">login</button>
+                    <button class=" btn btn-danger " data-bs-toggle="modal"
+                        data-bs-target="#staticBackup">signup</button>
+                    </li>
+                </ul>
+                    
+                
+            </div>
+        </div>
+    </nav>
+    <!-- Button trigger modal -->
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="exampleInputEmail1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1"
+                                aria-describedby="emailHelp">
+                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleInputPassword1" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackup" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Signup form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row g-3">
+                        <div class="col-md-6">
+                            <label for="inputEmail4" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword4" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4">
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress" class="form-label">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                            <div class="help text-muted">this address is used as your delivery address </div>
+                        </div>
+                        <div class="col-12">
+                            <label for="inputAddress2" class="form-label">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2"
+                                placeholder="Apartment, studio, or floor">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputCity" class="form-label">City</label>
+                            <input type="text" class="form-control" id="inputCity">
+                        </div>
+                        <div class="col-md-4">
+                            <label for="inputState" class="form-label">State</label>
+                            <select id="inputState" class="form-select">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                            </select>
+                        </div>
+                        <div class="col-md-2">
+                            <label for="inputZip" class="form-label">Zip</label>
+                            <input type="text" class="form-control" id="inputZip">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                    Check me out
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <class class="header d-flex justify-content-start  bg-dark ">
+
+        <a class=" m-3    text-decoration-none " id="he1" href="pay.html" style="font:bold;">Amkart-pay</a>
+        <a class="m-3  text-decoration-none" id="he1" href="">New-releases</a>
+        <a class="m-3  text-decoration-none" id="he1" href="">bestseller</a>
+        <a class="m-3  text-decoration-none" id="he1" href="">customer service</a>
+        <a class="m-3  text-decoration-none" id="he1" href="">electronics</a>
+        <a class="m-3  text-decoration-none" id="he1" href="">prime</a>
+        <a class="m-3 text-decoration-none" id="he1" href="">today deals</a>
+        <a class="m-3 text-decoration-none" id="he1" href="">mobile</a>
+        <a class="m-3 text-decoration-none" id="he1" href="">buyagain</a>
+        <a class="m-3 text-decoration-none" id="he1" href="">pantry</a>
+        <a class="m-3 text-decoration-none" id="he1" href="/music/music.html" target="blank">Amazon music</a>
+
+
+    </class>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+
+
+    <div class="big">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <title>slider</title>
+
+
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class=""></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class=""></li>
+                <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="active"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item">
+                    <img src="pay.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <div class="container d-flex justify-content-center align-items-center ">
+                            <div class="1 bg-light">
+                                <h4 class="text-dark p-3">welcome | @ vamshi</h4>
+                                <div class="container ">
+                                    <div class="row g-2 ">
+                                        <div class="col-6 ">
+                                            <img src="clothing.jpg" width="150px" alt="">
+                                            <a href="" class="text-dark text-decoration-none">clothing</a>
+                                        </div>
+                                        <div class="col-6  ">
+                                            <img class="mx-2" src="j.jpg" width="150px" alt="">
+                                            <a href="" class="text-dark text-decoration-none">jewellery</a>
+                                        </div>
+                                        <div class="col-6 p-2">
+                                            <img src="tv.jpg" width="150px" alt="">
+                                            <a href="" class="text-dark text-decoration-none">T.V</a>
+                                        </div>
+                                        <div class="col-6 p-2">
+                                            <img src="maxhine.jpg" width="150px" alt="">
+                                            <a href="" class="text-dark text-decoration-none">c</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="1 bg-dark mx-4">
+                                <h5 style="padding-top: 5px;">pay creditcard bill</h5>
+                                <img src="credit.jpg" alt="">
+                                <a href="" class="text-light p-2 text-decoration-none">paynow</a>
+
+                            </div>
+                            <div class="1 bg-light">
+                                <h4 class="text-dark p-3">EOSS | Style for Women | Up to 70% off</h4>
+                                <div class="container ">
+                                    <div class="row g-2 ">
+                                        <div class="col-6 ">
+                                            <img src="clothing.jpg" width="150px" alt="">
+                                            <a href="" class="text-dark text-decoration-none">clothing</a>
+                                        </div>
+                                        <div class="col-6  ">
+                                            <img class="mx-2" src="j.jpg" width="150px" alt="">
+                                            <a href="" class="text-dark text-decoration-none">jewellery</a>
+                                        </div>
+                                        <div class="col-6 p-2">
+                                            <img src="tv.jpg" width="150px" alt="">
+                                            <a href="" class="text-dark text-decoration-none">T.V</a>
+                                        </div>
+                                        <div class="col-6 p-2">
+                                            <img src="maxhine.jpg" width="150px" alt="">
+                                            <a href="" class="text-dark text-decoration-none">c</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="home1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>pay creditcard bill</h5>
+                        <img src="credit.jpg" alt="">
+                    </div>
+                </div>
+                <div class="carousel-item active">
+                    <img src="samsung.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Third slide label</h5>
+                        <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </a>
+        </div>
+        
+        <div class="group d-flex justify-content-center align-items-center">
+            <div class="g1 ms-4">
+                <img src="master.jpg" width="720" height="420" alt="">
+            </div>
+            <div class="g m-4">
+                <div class="1 bg-light">
+                    <h4 class="text-dark fw-bolder m-4">Amazon Pay | Secure your car & bike</h4>
+                    <div class="container">
+                        <div class="row gh-2  ">
+                            <div class="col-6 ">
+                                <img src="Desktop_QuadCard_Secure-your-bike._SY116_CB660819531_.jpg" width="164px"
+                                    alt="">
+                                <p>Clothing</p>
+                            </div>
+                            <div class="col-6  ">
+                                <img class="mx-2" src="Desktop_QuadCard_secure-your-car._SY116_CB660819531_.jpg"
+                                    width="164px" alt="">
+                                <a href="" class="text-dark text-decoration-none">jewellery</a>
+                            </div>
+                            <div class="col-6 ">
+                                <img src="Desktop_QuadCard_Set-reminders._SY116_CB660819531_.jpg" width="164px" alt="">
+                                <p> <a href="" class="text-dark text-decoration-none">T.V</a></p>
+                            </div>
+                            <div class="col-6 ">
+                                <img src="Desktop_QuadCard_Vehicle-accessories._SY116_CB660819531_.jpg" width="164px"
+                                    alt="">
+                                <p> <a href="" class="text-dark text-decoration-none">c</a></p>
+                            </div>
+
+                            <p>Explore more amazon powered offers</p>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="g m-4">
+                <div class="1 bg-light">
+                    <h4 class="text-dark p-3">welcome | @ vamshi</h4>
+                    <div class="container ">
+                        <div class="row gh-2 ">
+                            <div class="col-6 ">
+                                <img src="B00OT9CS5S_186x116._SY116_CB417134289_.jpg" width="164px" alt="">
+                                <a href="" class="text-dark text-decoration-none">clothing</a>
+                            </div>
+                            <div class="col-6  ">
+                                <img class="mx-2" src="B08345R1ZW_186x116._SY116_CB417134289_.jpg" width="164px" alt="">
+                                <a href="" class="text-dark text-decoration-none">jewellery</a>
+                            </div>
+                            <div class="col-6 ">
+                                <img src="B01N5KIHWN_186x116._SY116_CB417134288_.jpg" width="164px" alt="">
+                                <a href="" class="text-dark text-decoration-none">T.V</a>
+                            </div>
+                            <div class="col-6 ">
+                                <img src="WFH_186x116._SY116_CB417134289_.jpg" width="164px" alt="">
+                                <a href="" class="text-dark text-decoration-none">c</a>
+                            </div>
+                            <p>see more deals</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="group d-flex  align-items-center">
+            <div class="g1 m-4">
+                <div class="1 bg-light">
+                    <h4 class="text-dark p-3">welcome | @ vamshi</h4>
+                    <div class="container ">
+                        <div class="row g-2 ">
+                            <div class="col-6 ">
+                                <img src="clothing.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">clothing</a>
+                            </div>
+                            <div class="col-6  ">
+                                <img class="mx-2" src="j.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">jewellery</a>
+                            </div>
+                            <div class="col-6 p-2">
+                                <img src="tv.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">T.V</a>
+                            </div>
+                            <div class="col-6 p-2">
+                                <img src="maxhine.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">c</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="g2 m-4">
+                <div class="1 bg-light">
+                    <h4 class="text-dark p-3">welcome | @ vamshi</h4>
+                    <div class="container ">
+                        <div class="row g-2 ">
+                            <div class="col-6 ">
+                                <img src="clothing.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">clothing</a>
+                            </div>
+                            <div class="col-6  ">
+                                <img class="mx-2" src="j.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">jewellery</a>
+                            </div>
+                            <div class="col-6 p-2">
+                                <img src="tv.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">T.V</a>
+                            </div>
+                            <div class="col-6 p-2">
+                                <img src="maxhine.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">c</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="g3 m-4">
+                <div class="1 bg-light">
+                    <h4 class="text-dark p-3">welcome | @ vamshi</h4>
+                    <div class="container ">
+                        <div class="row g-2 ">
+                            <div class="col-6 ">
+                                <img src="clothing.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">clothing</a>
+                            </div>
+                            <div class="col-6  ">
+                                <img class="mx-2" src="j.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">jewellery</a>
+                            </div>
+                            <div class="col-6 p-2">
+                                <img src="tv.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">T.V</a>
+                            </div>
+                            <div class="col-6 p-2">
+                                <img src="maxhine.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">c</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="g3 m-4">
+                <div class="1 bg-light">
+                    <h4 class="text-dark p-3">welcome | @ vamshi</h4>
+                    <div class="container ">
+                        <div class="row g-2 ">
+                            <div class="col-6 ">
+                                <img src="clothing.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">clothing</a>
+                            </div>
+                            <div class="col-6  ">
+                                <img class="mx-2" src="j.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">jewellery</a>
+                            </div>
+                            <div class="col-6 p-2">
+                                <img src="tv.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">T.V</a>
+                            </div>
+                            <div class="col-6 p-2">
+                                <img src="maxhine.jpg" width="150px" alt="">
+                                <a href="" class="text-dark text-decoration-none">c</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-1 d-flex justify-content-center my-4">
+            <div class="box1 ">
+                <img src="tv.jpg" alt="">
+                <p>telivision</p>
+            </div>
+            <div class="box2 mx-4">
+                <img src="fridge.jpg" alt="">
+                <p>refrigirator</p>
+            </div>
+            <div class="box3">
+                <img src="maxhine.jpg" alt="">
+                <p>Washing machine</p>
+            </div>
+            <div class="box4 mx-4">
+                <img src="fashion.jpg" alt="">
+                <p>fashion</p>
+            </div>
+            <div class="box5">
+                <img src="footwear.jpg" alt="">
+                <p>footwear</p>
+            </div>
+            <div class="box6 mx-4">
+                <img src="j.jpg" alt="">
+                <p>jewellery</p>
+            </div>
+            <div class="box7">
+                <img src="clothing.jpg" alt="">
+                <p>clothing</p>
+            </div>
+
+
+        </div>
+
+        <div class="container-1 d-flex justify-content-center my-4 ">
+            <div class="box1  ">
+                <img src="tv.jpg" alt="">
+                <p>telivision</p>
+            </div>
+            <div class="box2 mx-4">
+                <img src="fridge.jpg" alt="">
+                <p>refrigirator</p>
+            </div>
+
+            <div class="box4 mx-4">
+                <img src="fashion.jpg" alt="">
+                <p>fashion</p>
+            </div>
+            <div class="box5">
+                <img src="footwear.jpg" alt="">
+                <p>footwear</p>
+            </div>
+            <div class="box6 mx-4">
+                <img src="j.jpg" alt="">
+                <p>jewellery</p>
+            </div>
+            <div class="box7">
+                <img src="clothing.jpg" alt="">
+                <p>clothing</p>
+            </div>
+
+
+        </div>
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+
+
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+        <title>footer</title>
+
+
+        <footer class="text-muted py-5">
+            <div class="container">
+                <p class="float-end mb-1">
+                    <a href="#">Back to top</a>
+                </p>
+                <p class="mb-1">Conditions of Use &amp; SalePrivacy NoticeInterest-Based Ads© 1996-2021, Amazon.com,
+                </p>
+                <p class="mb-0">Inc. or its affiliates <a href="/">Visit the homepage</a> or read our <a
+                        href="/docs/5.0/getting-started/introduction/">getting started guide</a>.</p>
+            </div>
+        </footer>
+
+        <!-- Optional JavaScript; choose one of the two! -->
+
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+            crossorigin="anonymous"></script>
+
+        <!-- Option 2: Separate Popper and Bootstrap JS -->
+        <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    -->
+
+
+
+
+    </div>
+</body>
+
+</html>

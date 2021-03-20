@@ -1,0 +1,81 @@
+    .navbar{
+        position: sticky;
+    }
+        .recharge {
+            margin-right: 5rem;
+            margin-top: 2rem;
+            float: right;
+            height: auto;
+            width: 70rem;
+
+            border-radius: 2px;
+
+            background-color: white;
+
+
+        }
+        .pay{
+            margin-left: 7rem;
+            margin-top: 2rem;
+            width: 20rem;
+            height: auto;
+            float: left;
+            background-color: white;
+            border-radius: 2px;
+        }
+        .pay p {
+            color:#0066c0;
+            margin-left: 1rem;
+        }
+        .item2 {
+            display: flex;
+
+        }
+
+        .item1 {
+            margin-left: 30px;
+
+        }
+
+        .item1 img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: auto;
+
+        }
+
+        body {
+            background-color: rgb(235, 235, 235);
+        }
+
+        .headline {
+            font: bold;
+            font-weight: 500;
+            font-size: larger;
+            font-family: "Amazon Ember", Arial, sans-serif;
+
+
+        }
+
+        .headbar {
+
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+            padding: 2px;
+
+        }
+
+        .headbar:hover {
+            color: white;
+            border: 1px solid;
+            border-radius: 2px;
+            border-color: white;
+            text-decoration: none;
+        }
+        .col img{
+            height: 60px;
+        }
+    
